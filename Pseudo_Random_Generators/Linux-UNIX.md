@@ -7,10 +7,12 @@ O **```/dev/random```**, que tem uso variado e pode ser considerado o *pool* sup
 O **```/dev/urandom```** pode ser utilizado para diversos fins, exeto para segurança. Pois não possui um sistema de travamento para o caso de não atingir uma qunatidade suficiente de números entrópicos.
 
 ## Entropia
-No caso dos *pools* acima, a entropia é alimentada pelo kernel do sistema com diversos elementos, tais como:
+As principais fontes de entropia do kernel, para alimentar as *pools* do sistema são:
 - Teclado
 - Disco
 - Mouse
+
+Além de muitas outras como a rede e dumps/espaços de memória.
 
 *No caso de máquinas como servidores, onde não há interação humana, as pools serão preenchidas de forma mais vagarosa. Haja vista, que o 1º e 3º elemento não estão disponíveis.*
 
